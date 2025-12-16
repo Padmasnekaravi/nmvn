@@ -1,5 +1,85 @@
 function App()
 {
+var unit=130
+  return(<>
+  <h1>EB bill</h1>
+  <h3>{(unit<=100 && "Rs.0")||
+  (unit>=101 && unit<=125 && "Rs.50")||
+  (unit>=126 && unit<=200 && "Rs."+(unit-100)*2)||
+  (unit>=201 && unit<=300 && "Rs."+(200+(unit-200)*3))||
+  (unit>=301 && unit<=400 &&"Rs."+(500+(unit-300)*4))||
+  "₹"+(900+(unit-400)*5)
+  }</h3>
+</>)
+}
+export default App
+
+/*function App()
+{
+  var avg=73
+  return(<>
+  <h1>React simple if else if statement</h1>
+  <h2>{(avg>=84 && "outstanding")|| (avg>=75 && "Excellent")||(avg>=65 && "very good")||
+  (avg>=56 && "fair")}</h2>
+  </>)
+}
+export default App
+
+/*function App()
+{
+  var num=10
+  return(<>
+  <h2>{(num>8 && "+ve")||"-ve"}</h2>
+ </>)
+}
+export default App*/
+/*function App()
+{
+  var num=10
+  return(<>
+  <h1>React simple if statement</h1>
+  <h2>{(num%2==0 && "even")||"odd"}</h2>
+ </>)
+}
+export default App
+
+
+
+
+
+/*function App()
+{
+  var age=25
+  return(<>
+  <h1>{(age>20 && "eligible")||" not eligible"}</h1>
+  </>)
+}
+export default App
+/*function App()
+{
+  var mark=85
+  return(<>
+  <h1>React simple if statement</h1>
+  <h2>{(mark>34 && "PASS")||"FAIL"}</h2>
+ </>)
+}
+export default App
+/y*function App()
+{
+  var mark=10
+  return(<>
+  <h1>React simple if statement</h1>
+  <h2>{mark>34 && "PASS"}</h2>
+ </>)
+}
+export default App
+
+
+
+
+
+/*function App()
+{
   if(true)
   {
     var v=100
@@ -19,28 +99,25 @@ function App()
   )
 }
 export default App
-
-
-
-
-
-
-
-
-/* App()
+/* function App()
 {
   let myfun=(a,b,c)=>{
     var tot=a+b+c
     document.getElementById("res").innerHTML=`<h2>Total:${tot}</h2>`;
 }
 return(<>
-<h2> </h2>
-
-
-)
+<h2>Arrow function with parmeter</h2>
+<h3> note: onClick c must be caps<br></br>don't use double qutoes</h3>
+<h3> note: In calling function must be use parenthesis rgs</h3>
+<button onClick={()=>myfun(10,20,30)}>clickme</button>
+<div id="res"></div>
+</>)
 }
+export default App
 
-</>
+
+
+
 function App()
 {
   let myfun=()=>{
@@ -154,8 +231,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="App-link"  href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
