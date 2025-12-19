@@ -1,10 +1,133 @@
+import { aadhar, accno, place, sname } from "./mycomponents/commonvar"
+import Padmasneka from "./mycomponents/Padmasneka"
+
 function App()
+{
+  return(
+    <>
+    <Padmasneka/>
+    <h1>This is default App components</h1>
+    <h3>my name is :{sname}</h3>
+    <h3>my city :{place}</h3>
+    <h3>my aadhar :{aadhar}</h3>
+    <h3>my accno:{accno}</h3>
+    </>
+  )
+}
+export default App
+
+
+
+/*function App()
+{
+  var arr=[11,22,33,44,55,66,77,88,99,13,29,101,345,126,321]
+  var ma=arr[0]
+  var s=0
+  var order=arr
+  var fans=""
+  return(<>
+<h1>React loop map method</h1>
+<h2>old model</h2>
+{arr[0]}
+{arr[1]}
+{arr[2]}
+{arr[3]}
+{arr[4]}
+{arr[5]}
+{arr[6]}
+{arr[7]}
+{arr[8]}  
+<h2>New model Map(loop)</h2>
+{arr.map((v)=><>
+{v}<br></br>
+</>)}
+
+<h2>New model Map(loop)</h2>
+<ol type="I">
+{arr.map((v)=><li>{v}</li>)}
+</ol>
+
+<h2>Task sum of array</h2>
+<div style={{display:"none"}}>
+{arr.map((item)=><>{s=s+item}<br></br></>)}
+</div>
+<h3>sum of array:{s}</h3>
+
+<h3>Max of array</h3>
+<div> {arr.map((v)=><>{ma<v && <>{ma=v}</>}</>)}
+</div>
+<h3>max of array:{ma}</h3>
+
+<h2>Ascending Order</h2>
+<div style={{display:"none"}}>{order.sort((x,y)=>(x-y)
+)}</div>
+{order.map((item)=><>{item}+</>)}
+
+<h2>descending Order</h2>
+<div style={{display:"none"}}>{order.sort((x,y)=>(y-x))}</div>
+{order.map((item=><>{item} </>))}
+
+<h3>Adding Element in an array</h3>
+<div style={{display:"none"}}>{order.push(899)}</div>
+{order.map((item)=><>{item} ,</>)}
+<br></br>
+
+<h3>Remove last element in an array</h3>
+<div style={{display:"none"}}>{order.pop()}</div>
+<div style={{display:"none"}}>{order.pop()}</div>
+<div style={{display:"none"}}>{order.pop()}</div>
+{order.map((item)=><>{item},</>)}
+
+<h2>remove last comma or plus</h2>
+<div style={{display:"none"}}>{order.map((item)=><>{fans=fans+item+","}</>)}</div>
+{fans.slice(0,-1)}
+</>)}
+export default App
+
+
+
+
+/*function App()
+{
+  var arr=[11,22,33,44,55,66]
+  var[v1,
+    ,v2,...v3]=arr
+  return(<>.
+  <h2>spread operator</h2>
+  <h3>index 1:{v1}</h3>
+  <h3>index 5:{v2}</h3>
+  <h3>index 6:{v3}</h3>
+  
+  </>)
+}
+export default App
+
+/*function App()
+{
+var res="pass"
+var avg=89
+return(<>
+<h1>React nested ifelse statement</h1> 
+<h2>{
+  (res==="pass" &&
+  ((avg>=85 && "outstanding")||
+ (avg>=75 && "excellent") ||
+  (avg>=65 && "very good")||
+  "fair"))||"no grade because fail"}
+  </h2>
+</>)
+}
+export default App
+
+
+
+/*function App()
 {
 var unit=130
   return(<>
   <h1>EB bill</h1>
   <h3>{(unit<=100 && "Rs.0")||
-  (unit>=101 && unit<=125 && "Rs.50")||
+  (unit>=101 && unit<=125 && "Rs.50")|| // default value 50
   (unit>=126 && unit<=200 && "Rs."+(unit-100)*2)||
   (unit>=201 && unit<=300 && "Rs."+(200+(unit-200)*3))||
   (unit>=301 && unit<=400 &&"Rs."+(500+(unit-300)*4))||
@@ -32,20 +155,16 @@ export default App
   <h2>{(num>8 && "+ve")||"-ve"}</h2>
  </>)
 }
-export default App*/
+export default App
 /*function App()
 {
   var num=10
   return(<>
   <h1>React simple if statement</h1>
-  <h2>{(num%2==0 && "even")||"odd"}</h2>
+  <h2>{(num % 2===0 && "even")||"odd"}</h2>
  </>)
 }
 export default App
-
-
-
-
 
 /*function App()
 {
