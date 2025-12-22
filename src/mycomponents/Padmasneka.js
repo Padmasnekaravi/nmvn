@@ -4,7 +4,19 @@ function Sneka()
         <>
         <h1>This Is sneka component</h1>
         </>
-    )
+
+
+
+
+
+
+
+
+
+
+
+ 
+ )
 }
 function Padmasneka()
 {
