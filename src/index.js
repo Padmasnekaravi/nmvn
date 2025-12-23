@@ -14,9 +14,8 @@ var sobj={
   issingle:true,
   hobbies:{
     hb1:"singing",
-    hb2:"studying"
-
-
+    hb2:"studying",
+    hb3:"dancing"
   }
 
 }

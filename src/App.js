@@ -1,5 +1,13 @@
-//finding data types// array object[] json object {ulla object}
-function App(props)
+
+
+
+
+
+
+
+
+//finding data types// array object[] json object {inside object}
+/*function App(props)
 {
   var a=props.data.sno
   var b=props.data.sname
@@ -13,13 +21,11 @@ function App(props)
   <h3>typeof marks:{typeof(d)}</h3>
   <h3>{Array.isArray(d)?"Its is array":"it is object json"}</h3>
   <h3>{Array.isArray(e)?"its is array":"it is object json"}</h3>
-  
-  
-  
   </>)
 }
 export default App
 
+//function components
 /*import parse from 'html-react-parser'
 function App(props)//function components
 {
@@ -36,6 +42,9 @@ function App(props)//function components
     </>)
 }
 export default App
+
+
+
 //class component
 /*import React from "react";
 import parse from 'html-react-parser';
@@ -53,6 +62,44 @@ class App extends React.Component
 
 this.state={
   res:"<ol type='I'>"+ans+"</ol>"
+}
+}
+render()
+  {
+    return(
+      <>
+      <h1>combine react state + properties</h1>
+      {parse(this.state.res)}
+      <div id="res"></div>
+     </>)
+  }
+}
+
+export default App
+
+
+
+
+
+
+//react state combine props
+/*import React from "react";
+import parse from 'html-react-parser';
+class App extends React.Component
+{
+  constructor(props)
+  {
+    var ans=""
+ super(props)
+ for(var s in props.data)
+{
+  ans=ans+`<li>${s} = ${props.data[s]}</li>`
+  console.log(s)
+}  
+var h="<ol>" 
+
+this.state={
+  res:h+ans
 }
 }
 render()
@@ -109,16 +156,10 @@ class App extends React.Component
 </>)
   }
 }
-export default App
+export default App/*
 
 
-
-
-
-
-
-
-/*import { aadhar, accno, place, sname } from "./mycomponents/commonvar"
+import { aadhar, accno, place, sname } from "./mycomponents/commonvar"
 import Padmasneka from "./mycomponents/Padmasneka"
 
 function App()
@@ -202,11 +243,7 @@ export default App
 <h2>remove last comma or plus</h2>
 <div style={{display:"none"}}>{order.map((item)=><>{fans=fans+item+","}</>)}</div>
 {fans.slice(0,-1)}
-<
-
-
-
-/>)}
+</>)}
 export default App
 
 
@@ -360,7 +397,7 @@ export default App
 
 
 
-
+//button
 function App()
 {
   let myfun=()=>{
@@ -375,6 +412,8 @@ function App()
 </>)
 }
 export default App
+
+//images
  /*import myimg from './images/img1.jpg'
 function App()
 {
@@ -386,7 +425,7 @@ function App()
     </>)
 }
 export default App
-
+//bigges number
 /*function App()
 {
    var a=300
@@ -401,6 +440,8 @@ export default App
    )
 }
 export default App
+
+//animation react using syntax expression{}
 function App(){
   //Javascript learned code
   var a=10

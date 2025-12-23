@@ -1,6 +1,6 @@
- const aadhar=532291935486
- const accno=44454896213555
- const place="karur"
- const sname="Padmasneka R"
+ export const aadhar=532291935486
+ export const accno=44454896213555
+ export const place="karur"
+ export const sname="Padmasneka R"
 
- export {aadhar,place,accno,sname}
+ //export {aadhar,place,accno,sname}

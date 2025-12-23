@@ -3,20 +3,7 @@ function Sneka()
     return(
         <>
         <h1>This Is sneka component</h1>
-        </>
-
-
-
-
-
-
-
-
-
-
-
- 
- )
+        </>)
 }
 function Padmasneka()
 {
